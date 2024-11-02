@@ -93,8 +93,17 @@
                     \fbox{$x = $ 0, 4, and 2}
               \item 35. $g(y) = \frac{y-1}{y^2 - y + 1}$
                     \begin{align*}
-                        g'(y) & = \frac{(y^2 - y + 1)(1) - (y-1)(2y-1)}{{(y^2 - y + 1)}^2} &  & \text{quotient rule} \\ g'(y) &= && \text{how to simplify from here?}
+                        g'(y) & = \frac{(y^2 - y + 1)(1) - (y-1)(2y-1)}{{(y^2 - y + 1)}^2} &  & \text{quotient rule}
                     \end{align*}
+                    Set denominator and numerator to 0 to find undefined inputs and roots respectively.
+                    \begin{align*}
+                        0 & = y^2 - y + 1                 &  & \text{denominator factor} \\
+                        y & = 0                                                          \\[2em]
+                        0 & = y^2 - y + 1 - 2y^2 + 3y - 1 &  & \text{numerator}          \\
+                        0 & = -y^2 + 2y                                                  \\
+                        y & = 2
+                    \end{align*}
+                    \fbox{$x = $ 0 and 2}
               \item 39. $h(t) = t^{3/4} - 2t^{1/4}$
                     \begin{align*}
                         h'(t) & = \frac{3}{4}t^{-1/4} - \frac{1}{2}t^{-3/4}                                               &  & \text{find derivative}         \\[1em]
@@ -114,22 +123,25 @@
 
               \item 43. $f(x) = x^{1/3}(4-x)^{2/3}$
                     \begin{align*}
-                        f'(x) & = x^{1/3}(-4 + x)(-1) + (4-x)^{2/3}\frac{1}{3}x^{2/3}                                    &  & \text{product rule}                   \\[1em]
-                        f'(x) & = \frac{x^{1/3}(-4 + x)}{3} + \frac{(4-x)^{2/3}}{3x^{2/3}}                               &  & \text{rewrite as rational expression} \\[1em]
-                        f'(x) & = \frac{x^{1/3}(-4 + x)}{3} \cdot \frac{x^{2/3}}{x^{2/3}} + \frac{(4-x)^{2/3}}{3x^{2/3}} &  & \text{get common denominators}        \\[1em]
-                        f'(x) & = \frac{x(-4 + x) + (4-x)^{2/3}}{3x^{2/3}}
+                        f'(x) & = x^{1/3}\frac{2}{3} (4-x)^{-1/3}(-1) + \frac{1}{3}x^{-2/3}(4-x)^{2/3}                                                      &  & \text{product rule}                   \\[1em]
+                        f'(x) & = \frac{-2x^{1/3}}{3(4-x)^{1/3}}  + \frac{(4-x)^{2/3}}{3x^{2/3}}                                                            &  & \text{rewrite as rational expression} \\[1em]
+                        f'(x) & = \frac{-2x^{1/3}}{3(4-x)^{1/3}} * \frac{x^{2/3}}{x^{2/3}} + \frac{(4-x)^{2/3}}{3x^{2/3}} * \frac{(4-x)^{1/3}}{(4-x)^{1/3}} &  & \text{get common denominators}        \\[1em]
+                        f'(x) & = \frac{-2x + (4-x)}{3x^{2/3}(4-x)^{1/3}}
                     \end{align*}
+                    set both factors in denominator to 0 to evaluate where function is undefined, set numerator to 0 to find root(s).
                     \begin{align*}
-                        0 & = 3x^{2/3} &  & \text{set denominator to 0 to evaluate where function is undefined} \\
-                        x & = 0
+                        0 & = 3x^{2/3}    &  & \text{denominator factor \#1} \\
+                        x & = 0                                              \\[2em]
+                        0 & = (4-x)^{1/3} &  & \text{denominator factor \#2} \\
+                        x & = 4                                              \\[2em]
+                        0 & = -2x - x + 4 &  & \text{numerator}              \\
+                        0 & = -2x - x + 4                                    \\
+                        4 & = 2x + x                                         \\
+                        4 & = x(2 + 1)                                       \\
+                        4 & = 3x                                             \\
+                        x & = \frac{4}{3}
                     \end{align*}
-                    \begin{align*}
-                        0 & = x(-4 + x) + (4-x)^{2/3}     &  & \text{set numerator to 0 to find root(s)}                 \\
-                        0 & = (4 - x)(-x + (4 - x)^{1/3}) &  & \text{find factors, $x=4$}                                \\
-                        0 & = -x + (4 - x)^{1/3}          &  & \text{isolate factor by removing $(4-x)$}                 \\
-                        x & =                             &  & \text{how to simplify from here? missing $x=\frac{4}{3}$}
-                    \end{align*}
-                    \fbox{$x = 0$ and 4}
+                    \fbox{$x = 0$, 4 and $\frac{4}{3}$}
               \item 47. $g(x) = x^2\ln{x}$
                     \begin{align*}
                         g'(x)         & = x^2\left(\frac{1}{x}\right) + 2x\ln{x} &  & \text{product rule}                            \\
@@ -251,8 +263,30 @@
                     (a) \fbox{max: $f(1) = 2.85$, \space min: $f(0.23) = 0.89$}
 
                     \begin{align*}
-                        f'(x) & = e^x + e^{-2x}(-2) &  & \text{find derivative}                                        \\
-                        f'(x) & =                   &  & \text{How to simplify without taking log of negative number?} \\
+                        f'(x) & = e^x + e^{-2x}(-2)                                        &  & \text{find derivative} \\
+                        f'(x) & = e^x - \frac{2}{e^{2x}}                                                               \\
+                        f'(x) & = \frac{e^x}{1} * \frac{e^{2x}}{e^{2x}} - \frac{2}{e^{2x}}                             \\
+                        f'(x) & = \frac{e^{3x} - 2}{e^{2x}}
+                    \end{align*}
+                    Denominator can't be 0. Set numerator to 0 to find roots
+                    \begin{align*}
+                        0      & = e^{3x} - 2       \\
+                        2      & = e^{3x}           \\
+                        \ln{2} & = 3x               \\
+                        x      & = \frac{\ln{2}}{3}
+                    \end{align*}
+                    Critical values are 0, 1 and $\frac{\ln{2}}{3}$. Plug into original equation.
+                    \begin{align*}
+                        f(0)                           & = e^0 + e^{-2* 0}                                                                                                                                                                                                    \\
+                        f(0)                           & = 2                                                                                                                                                                                                                  \\[2em]
+                        f(1)                           & = e^1 + e^{-2 * 1}                                                                                                                                                                                                   \\
+                        f(1)                           & = e + \frac{1}{e^2}                                                                                                                                                                                                  \\
+                        f(1)                           & = \frac{1}{e}                                                                                                                                                                                                        \\
+                        f(1)                           & = 0.37                                                                                                                                                                                                               \\[2em]
+                        f\left(\frac{\ln{2}}{3}\right) & = e^{\left(\frac{\ln{2}}{3}\right)} + e^{-2\left(\frac{\ln{2}}{3}\right)}                                                                                                                                            \\
+                        f\left(\frac{\ln{2}}{3}\right) & = \frac{e^{\left(\frac{\ln{2}}{3}\right)}}{1} + \frac{1}{e^{\left(\frac{2\ln{2}}{3}\right)}}                                                                                                                         \\
+                        f\left(\frac{\ln{2}}{3}\right) & = \frac{e^{\left(\frac{\ln{2}}{3}\right)}}{1} \cdot \frac{e^{\left(\frac{2\ln{2}}{3}\right)}}{e^{\left(\frac{2\ln{2}}{3}\right)}}+ \frac{1}{e^{\left(\frac{2\ln{2}}{3}\right)}}                                      \\
+                        f\left(\frac{\ln{2}}{3}\right) & =  \frac{e^{\left(\frac{\ln{2} + 2\ln{2}}{3}\right)}+ 1}{e^{\left(\frac{2\ln{2}}{3}\right)}}                                                                                    &  & \text{how to simplify further?}
                     \end{align*}
           \end{description}
 \end{description}
