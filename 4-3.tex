@@ -53,7 +53,7 @@
                 Polynomials are differentiable for all real numbers.
                 \begin{align*}
                   f'(x) & = 6x^2 - 30x + 24 &  & \text{find derivative} \\
-                  0     & = 6x^2 - 30x + 24                             \\
+                  0     & = 6x^2 - 30x + 24                             \\[2em]
                   0     & = x^2 -5x + 4     &  & \text{find root(s)}    \\
                   0     & = (x - 1)(x - 4)
                 \end{align*}
@@ -123,14 +123,15 @@
                   f(6) & = \frac{12}{1}           \\
                   f(6) & = 12
                 \end{align*}
-                \fbox{Local max: $f(4) = 8$ and Local min: $f(6) = 12$}
+                \fbox{local max: $f(4) = 8$, local min: $f(6) = 12$}
           \item 17. $x^3-3x^2 - 9x + 4$
+
                 Polynomials are differentiable for all real numbers.
                 \begin{align*}
                   f'(x) & = 3x^2-6x - 9     &  & \text{find derivative} \\[2em]
                   0     & = 3x^2-6x - 9     &  & \text{find root(s)}    \\
                   0     & = x^2-2x - 3                                  \\
-                  0     & = (x + 1) (x - 3)                             \\
+                  0     & = (x + 1) (x - 3)
                 \end{align*}
                 Critical numbers are -1 and 3
                 \begin{align*}
@@ -138,8 +139,8 @@
                   f'(-2) & = 15                &  & \text{increasing}               \\[2em]
                   f'(0)  & = 3(0)^2-6(0) - 9   &  & \text{interval $(-1, 3)$}       \\
                   f'(0)  & = -9                &  & \text{decreasing}               \\[2em]
-                  f'(4)  & = 3(4)^2-6(4) - 9   &  & \text{interval $(3, infty)$}    \\
-                  f'(4)  & = 24                &  & \text{increasing}               \\[2em]
+                  f'(4)  & = 3(4)^2-6(4) - 9   &  & \text{interval $(3, \infty)$}   \\
+                  f'(4)  & = 24                &  & \text{increasing}
                 \end{align*}
 
                 Local max: $f(-1)$, Local min: $f(3)$. Plug back into original function. We can
@@ -179,6 +180,8 @@
                 \end{align*}
                 \fbox{Inflection point: (1, -7)}
           \item 21. $\ln{(x^2+5)}$
+
+                Function has natural log so domain is all real numbers greater than 0.
                 \begin{align*}
                   f'(x)  & =  \frac{1}{x^2+5}(2x)                     &  & \text{find derivative}        \\
                   f'(x)  & =  \frac{2x}{x^2+5}                        &  &                               \\[2em]
@@ -203,6 +206,94 @@
                   f''(3)  & = \frac{-}{+}                         &  & \text{concave down}
                 \end{align*}
                 Plug solutions back into original equation to find inflection points.
+                \begin{align*}
+                  f(-\sqrt{5}) & = \ln{((-\sqrt{5})^2+5)} \\
+                  f(-\sqrt{5}) & = \ln{(5 + 5)}           \\
+                  f(-\sqrt{5}) & = \ln{10}                \\[2em]
+                  f(\sqrt{5})  & =\ln{(\sqrt{5}^2+5)}     \\
+                  f(\sqrt{5})  & = \ln{(5 + 5)}           \\
+                  f(\sqrt{5})  & =\ln{10}
+                \end{align*}
+                \fbox{Inflection points: $(\pm\sqrt{5}, \ln{10})$}
+          \item 25. $x^2 - x - \ln{x}$
+
+                Function has natural log so domain is all real numbers greater than 0.
+                \begin{align*}
+                  f'(x) & = 2x - 1 - \frac{1}{x}                             &  & \text{find derivative}                  \\[2em]
+                  0     & = 2x - 1 - \frac{1}{x}                             &  & \text{find root(s) of first derivative} \\
+                  0     & = 2x * \frac{x}{x} - 1 * \frac{x}{x} - \frac{1}{x} &  & \text{get common denominators}          \\
+                  0     & = \frac{2x^2 - x - 1}{x}                                                                        \\[2em]
+                  0     & = 2x^2 - x - 1                                     &  & \text{set numerator = 0}                \\
+                  0     & = 2x(x - 1) + (1)(x - 1)                                                                        \\
+                  0     & = (2x + 1)(x - 1)                                  &  & \text{factors}
+                \end{align*}
+
+                By evaluating roots and inputs that make derivative undefined, the only critical value is shown to be 1. $-\frac{1}{2}$ and 0 are not
+                included because they aren't in domain of original function. Next, evaluate inputs on intervals surrounding the critical value.
+                \begin{align*}
+                  f'(\frac{1}{2}) & = 2\left(\frac{1}{2}\right) - 1 - \frac{1}{\frac{1}{2}} &  & \text{interval $(0, 1)$}      \\
+                  f'(\frac{1}{2}) & = 1 - 1 - 2                                                                                \\
+                  f'(\frac{1}{2}) & = -2                                                    &  & \text{decreasing}             \\[2em]
+                  f'(2)           & = 2(2) - 1 - \frac{1}{2}                                &  & \text{interval $(1, \infty)$} \\
+                  f'(2)           & = 4 - 1 -  \frac{1}{2}                                                                     \\
+                  f'(2)           & = -2.5                                                  &  & \text{increasing}
+                \end{align*}
+
+                Plug in critical values to original function.
+
+                \begin{align*}
+                  f(0) & = 0^2 - 0 - \ln{0} \\
+                \end{align*}
+                \fbox{No local max. local min: $f(1) = 0$}
+                \begin{align*}
+                  f''(x) & = 2 +x^{-2}           &  & \text{find second derivative} \\
+                  f''(x) & = 2 + \frac{1}{x^{2}}
+                \end{align*}
+                Solution is always positive. There are no real roots, so no real inflection points. Therefore the function is concave upwards
+                everywhere on its domain.
+        \end{description}
+  \item\textbf{Find local max and min with first and second derivative test}
+        \begin{description}
+          \setlength\itemsep{3em}
+          \item 29. $f(x) = 1 + 3x^2 - 2x^3$
+
+                Function is a polynomial so it is differentiable for all real numbers.
+                \begin{align*}
+                  f'(x) & = -6x^2 + 6x &  & \text{find derivative} \\[2em]
+                  0     & = -6x^2 + 6x &  & \text{find root(s)}    \\
+                  0     & = -6x(x - 1)
+                \end{align*}
+                Critical numbers are 0 and 1.
+
+                First derivative test:
+                \begin{align*}
+                  f'(-1)          & = -6(-1)^2 + 6(-1)                                         &  & \text{interval $(-\infty, 0)$} \\
+                  f'(-1)          & = -6 - 6                                                   &  & \text{decreasing}              \\[2em]
+                  f'(\frac{1}{2}) & = -6\left(\frac{1}{2}\right)^2 + 6\left(\frac{1}{2}\right) &  & \text{interval $(0, 1)$}       \\
+                  f'(\frac{1}{2}) & = -2\frac{1}{2}  +   3                                     &  & \text{increasing}              \\[2em]
+                  f'(10)          & = -6(10)^2 + 6(10)                                         &  & \text{interval $(1, \infty)$}  \\
+                  f'(10)          & = -600 + 60                                                &  & \text{decreasing}
+                \end{align*}
+                local min at $f(0)$, local max at $f(1)$.
+
+                Second derivative test:
+                \begin{align*}
+                  f''(x) & = -12x + 6   &  & \text{find derivative}                           \\[2em]
+                  f''(0) & = -12(0) + 6 &  & \text{critical value \#1}                        \\
+                  f''(0) & = 6          &  & \text{positive so this is occurs at a local min} \\[2em]
+                  f''(1) & = -12(1) + 6 &  & \text{critical value \#2}                        \\
+                  f''(1) & = -12 + 6    &  & \text{negative so this occurs at a local max}
+                \end{align*}
+
+                We've found the local min and max locations. Now plug into original function to get extrema values.
+                \begin{align*}
+                  f(0) & = 1 + 3(0)^2 - 2(0)^3 \\
+                  f(0) & = 1                   \\[2em]
+                  f(1) & = 1 + 3(1)^2 - 2(1)^3 \\
+                  f(1) & = 1 + 3 - 2           \\
+                  f(1) & = 2
+                \end{align*}
+                \fbox{local max: $f(1) = 2$,  local min: $f(0) = 1$}
         \end{description}
 \end{description}
 \end{document}
